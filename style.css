@@ -1,0 +1,75 @@
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.signup-button {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card-slot {
+    position: relative;
+    width: 200px;
+}
+
+.ownership-checkbox {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+
+.card-image {
+    width: 200px;
+    position: relative;
+    filter: grayscale(100%);
+}
+
+.ownership-checkbox:checked + .card-image {
+    filter: grayscale(0%);
+}
+
+.missing-image {
+    display: block;
+    height: 280px;
+    background-color: #eeeeee;
+}

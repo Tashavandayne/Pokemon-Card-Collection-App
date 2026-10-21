@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Pok&eacute;mon Card Binder</title>
+    </head>
+
+<body>
+    <nav>
+        <button class="button">Home</button>
+        <button class="button">My Binders</button>
+        <button class="button">My Cards</button>
+        <button class="button">Pok&eacute;dex</button>
+        <button class="login-button">Login</button>
+        <button class="signup-button">Sign Up</button>
+
+    </nav>
+    <h1>My Pok&eacute;mon Binder</h1>
+
+    <!-- Show the first cards name here using JavaScript. -->
+    <p id="card-name"></p>
+
+    <form id="add-card-form">
+        <label for="pokemon-name">Pok&eacute;mon Name</label>
+        <input type="text" id="pokemon-name">
+        <button type="submit">Add Card</button>        
+    </form>
+
+    <input type="search" id="card-search" placeholder="Search cards">
+
+     <!-- Hold the card elements created by Javascript. -->
+    <div id="card-list"></div>
+
+    <!-- Load the JavaScript that will communicate with our C++ server. -->
+    <script src="script.js"></script>
+
+</body>
+</html>
